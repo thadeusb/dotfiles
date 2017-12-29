@@ -6,6 +6,7 @@ This project serves as a base standard linux developer installation without comp
 
 * Clone the repository to `~/.dotfiles/`.
 * Run the dotfiles command `cd ~/.dotfiles && ./dotfiles`
+* Change shells to ZSH `chsh -s $(which zsh)`
 
 ## Update
 

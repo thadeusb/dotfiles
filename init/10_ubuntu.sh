@@ -44,6 +44,6 @@ for package in "${npm_globals[@]}"; do
     sudo npm --silent install -g "$package"
 done
 
-echo "Installing ZSH"
+echo "Installing ZSH (Shells will need to be manually changed later)"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s $(which zsh)
+
