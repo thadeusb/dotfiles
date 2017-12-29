@@ -2,22 +2,27 @@ is_ubuntu || return 1
 
 packages=(
     build-essential
-    samba
-    zsh
+    curl
     git
-    python-dev
-    virtualenv
+    google-chrome-stable
     nodejs
     npm
+    python-dev
+    samba
     sublime-text
+    virtualenv
+    zsh
 )
 
 npm_globals=(
-    create-react-app
     bower
     coffee-script
+    create-react-app
     less
 )
+
+wget -qO - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -35,8 +40,6 @@ if (( ${#packages[@]} > 0 )); then
     sudo apt-get -qq install "$package"
   done
 fi
-
-install_dpkg "chrome" "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
 echo "Installing NPM packages: ${npm_globals[*]}"
 # NPM
