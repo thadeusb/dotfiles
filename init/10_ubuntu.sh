@@ -15,10 +15,7 @@ packages=(
 )
 
 npm_globals=(
-    bower
-    coffee-script
     create-react-app
-    less
 )
 
 wget -qO - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
