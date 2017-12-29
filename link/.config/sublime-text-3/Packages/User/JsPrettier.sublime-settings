@@ -1,0 +1,7 @@
+{
+	"prettier_cli_path": "./node_modules/.bin/prettier",
+	"additional_cli_args": {
+		"--config-precedence": "prefer-file"
+	},
+	"auto_format_on_save": false
+}

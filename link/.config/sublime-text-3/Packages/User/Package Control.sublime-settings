@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Babel",
+		"Emmet",
+		"GitGutter",
+		"JsPrettier",
+		"LESS",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"requirementstxt",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SyncedSideBar"
+	]
+}
